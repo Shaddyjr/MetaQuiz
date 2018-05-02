@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Meta Quiz</string>
+
+    <string name="q1_q">Question #1</string>
+    <string name="q1">What kind of view is THIS question in?</string>
+    <string name="a1_1">EditText</string>
+    <string name="a1_2">ImageView</string>
+    <string name="a1_3">TextView</string>
+    <string name="a1_4">LinearLayout</string>
+
+    <string name="q2_q">Question #2</string>
+    <string name="q2">What is the term for the transition \'stages\' an app goes through when a user opens, interacts with, and closes an app?</string>
+    <string name="a2_1">Transitions</string>
+    <string name="a2_2">Stage Movement</string>
+    <string name="a2_3">App Progression</string>
+    <string name="a2_4">The Activity Lifecycle</string>
+
+    <string name="q3_q">Question #3</string>
+    <string name="q3">Instead of hard-coding strings in the \'activity_main.xml\', what file should you typically put your strings?</string>
+
+    <string name="q4_q">Question #4</string>
+    <string name="q4">In Java, if you don\'t want a method to be accessible outside of a class, what keyword should be used?</string>
+
+    <string name="q5_q">Question #5</string>
+    <string name="q5">What coding languages were used to make this quiz app?</string>
+    <string name="a5_1">Python</string>
+    <string name="a5_2">Java</string>
+    <string name="a5_3">XML</string>
+    <string name="a5_4">HTML</string>
+
+    <string name="q6_q">Question #6</string>
+    <string name="q6">In which ways can the \'Submit\' button below be accessed?</string>
+    <string name="a6_1">By referencing it through a unique @id</string>
+    <string name="a6_2">By passing it as a parameter in an \'onclick\' method</string>
+    <string name="a6_3">By referencing it as a child of the parent layout it is in</string>
+    <string name="a6_4">(There is no way to access it)</string>
+
+    <string name="submit">Submit</string>
+
+    <string name="success">You got all questions right!</string>
+</resources>
