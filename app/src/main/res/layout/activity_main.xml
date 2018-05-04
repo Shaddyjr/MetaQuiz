@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,36 +16,33 @@
             >
             <TextView
                 style="@style/qNum"
-                android:text="@string/q1_q"
+                android:text="@string/questionNumber1"
                 />
             <TextView
                 style="@style/question"
-                android:text="@string/q1"
+                android:text="@string/question1"
                 />
 
             <RadioGroup
                 style="@style/checkbox_container"
-                android:id="@+id/q1"
+                android:id="@+id/mRadioGroup1"
                 >
                 <RadioButton
                     style="@style/checkbox"
-                    android:text="@string/a1_1"
-                    android:id="@+id/q1_1"
+                    android:text="@string/question1_answer1"
                     />
                 <RadioButton
                     style="@style/checkbox"
-                    android:text="@string/a1_2"
-                    android:id="@+id/q1_2"
+                    android:text="@string/question1_answer2"
                     />
                 <RadioButton
                     style="@style/checkbox"
-                    android:text="@string/a1_3"
-                    android:id="@+id/q1_3"
+                    android:text="@string/question1_answer3"
+                    android:id="@+id/answer1"
                     />
                 <RadioButton
                     style="@style/checkbox"
-                    android:text="@string/a1_4"
-                    android:id="@+id/q1_4"
+                    android:text="@string/question1_answer4"
                     />
             </RadioGroup>
         </LinearLayout>
@@ -56,35 +52,32 @@
             >
             <TextView
                 style="@style/qNum"
-                android:text="@string/q2_q"
+                android:text="@string/questionNumber2"
                 />
             <TextView
                 style="@style/question"
-                android:text="@string/q2"
+                android:text="@string/question2"
                 />
             <RadioGroup
                 style="@style/checkbox_container"
-                android:id="@+id/q2"
+                android:id="@+id/mRadioGroup2"
                 >
                 <RadioButton
                     style="@style/checkbox"
-                    android:text="@string/a2_1"
-                    android:id="@+id/q2_1"
+                    android:text="@string/question2_answer1"
                     />
                 <RadioButton
                     style="@style/checkbox"
-                    android:text="@string/a2_2"
-                    android:id="@+id/q2_2"
+                    android:text="@string/question2_answer2"
                     />
                 <RadioButton
                     style="@style/checkbox"
-                    android:text="@string/a2_3"
-                    android:id="@+id/q2_3"
+                    android:text="@string/question2_answer3"
                     />
                 <RadioButton
                     style="@style/checkbox"
-                    android:text="@string/a2_4"
-                    android:id="@+id/q2_4"
+                    android:text="@string/question2_answer14"
+                    android:id="@+id/answer2"
                     />
             </RadioGroup>
         </LinearLayout>
@@ -94,15 +87,15 @@
             >
             <TextView
                 style="@style/qNum"
-                android:text="@string/q3_q"
+                android:text="@string/questionNumber3"
                 />
             <TextView
                 style="@style/question"
-                android:text="@string/q3"
+                android:text="@string/question3"
                 />
             <EditText
                 style="@style/q_editText"
-                android:id="@+id/q3"
+                android:id="@+id/mEditText1"
                 />
         </LinearLayout>
         <!--QUESTION 4-->
@@ -111,15 +104,15 @@
             >
             <TextView
                 style="@style/qNum"
-                android:text="@string/q4_q"
+                android:text="@string/questionNumber4"
                 />
             <TextView
                 style="@style/question"
-                android:text="@string/q4"
+                android:text="@string/question4"
                 />
             <EditText
                 style="@style/q_editText"
-                android:id="@+id/q4"
+                android:id="@+id/mEditText2"
                 />
         </LinearLayout>
         <!--QUESTION 5-->
@@ -128,34 +121,34 @@
             >
             <TextView
                 style="@style/qNum"
-                android:text="@string/q5_q"
+                android:text="@string/questionNumber5"
                 />
             <TextView
                 style="@style/question"
-                android:text="@string/q5"
+                android:text="@string/question5"
                 />
             <LinearLayout
                 style="@style/checkbox_container"
                 >
                 <CheckBox
                     style="@style/checkbox"
-                    android:text="@string/a5_1"
-                    android:id="@+id/q5_1"
+                    android:text="@string/question5_answer1"
+                    android:id="@+id/mCheckboxQ5_answer1"
                     />
                 <CheckBox
                     style="@style/checkbox"
-                    android:text="@string/a5_2"
-                    android:id="@+id/q5_2"
+                    android:text="@string/question5_answer2"
+                    android:id="@+id/mCheckboxQ5_answer2"
                     />
                 <CheckBox
                     style="@style/checkbox"
-                    android:text="@string/a5_3"
-                    android:id="@+id/q5_3"
+                    android:text="@string/question5_answer3"
+                    android:id="@+id/mCheckboxQ5_answer3"
                     />
                 <CheckBox
                     style="@style/checkbox"
-                    android:text="@string/a1_4"
-                    android:id="@+id/q5_4"
+                    android:text="@string/question1_answer4"
+                    android:id="@+id/mCheckboxQ5_answer4"
                     />
             </LinearLayout>
         </LinearLayout>
@@ -165,11 +158,11 @@
             >
             <TextView
                 style="@style/qNum"
-                android:text="@string/q6_q"
+                android:text="@string/questionNumber6"
                 />
             <TextView
                 style="@style/question"
-                android:text="@string/q6"
+                android:text="@string/question6"
                 />
             <LinearLayout
                 style="@style/checkbox_container"
@@ -177,23 +170,23 @@
                 >
                 <CheckBox
                     style="@style/checkbox"
-                    android:text="@string/a6_1"
-                    android:id="@+id/q6_1"
+                    android:text="@string/question6_answer1"
+                    android:id="@+id/mCheckboxQ6_answer1"
                     />
                 <CheckBox
                     style="@style/checkbox"
-                    android:text="@string/a6_2"
-                    android:id="@+id/q6_2"
+                    android:text="@string/question6_answer2"
+                    android:id="@+id/mCheckboxQ6_answer2"
                     />
                 <CheckBox
                     style="@style/checkbox"
-                    android:text="@string/a6_3"
-                    android:id="@+id/q6_3"
+                    android:text="@string/question6_answer3"
+                    android:id="@+id/mCheckboxQ6_answer3"
                     />
                 <CheckBox
                     style="@style/checkbox"
-                    android:text="@string/a6_4"
-                    android:id="@+id/q6_4"
+                    android:text="@string/question6_answer4"
+                    android:id="@+id/mCheckboxQ6_answer4"
                     />
             </LinearLayout>
         </LinearLayout>

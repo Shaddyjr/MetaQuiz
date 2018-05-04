@@ -12,72 +12,102 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    RadioGroup q1,q2;
-    RadioButton a1,a2;
+    RadioGroup
+            mRadioGroup1,
+            mRadioGroup2;
+    RadioButton
+            answer1,
+            answer2;
 
-    EditText q3,q4;
+    EditText
+            mEditText1,
+            mEditText2;
 
-    CheckBox q5_1,q5_2,q5_3,q5_4,q6_1,q6_2,q6_3,q6_4;
+    CheckBox
+            mCheckboxQ5_answer1,
+            mCheckboxQ5_answer2,
+            mCheckboxQ5_answer3,
+            mCheckboxQ5_answer4,
+            mCheckboxQ6_answer1,
+            mCheckboxQ6_answer2,
+            mCheckboxQ6_answer3,
+            mCheckboxQ6_answer4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        q1 = findViewById(R.id.q1);
-        q2 = findViewById(R.id.q2);
-        a1 = findViewById(R.id.q1_3);
-        a2 = findViewById(R.id.q2_4);
-        q3 = findViewById(R.id.q3);
-        q4 = findViewById(R.id.q4);
+        mRadioGroup1            = findViewById(R.id.mRadioGroup1);
+        mRadioGroup2            = findViewById(R.id.mRadioGroup2);
+        answer1                 = findViewById(R.id.answer1);
+        answer2                 = findViewById(R.id.answer2);
+        mEditText1              = findViewById(R.id.mEditText1);
+        mEditText2              = findViewById(R.id.mEditText2);
 
-        q5_1 = findViewById(R.id.q5_1);
-        q5_2 = findViewById(R.id.q5_2);
-        q5_3 = findViewById(R.id.q5_3);
-        q5_4 = findViewById(R.id.q5_4);
+        mCheckboxQ5_answer1     = findViewById(R.id.mCheckboxQ5_answer1);
+        mCheckboxQ5_answer2     = findViewById(R.id.mCheckboxQ5_answer2);
+        mCheckboxQ5_answer3     = findViewById(R.id.mCheckboxQ5_answer3);
+        mCheckboxQ5_answer4     = findViewById(R.id.mCheckboxQ5_answer4);
 
-        q6_1 = findViewById(R.id.q6_1);
-        q6_2 = findViewById(R.id.q6_2);
-        q6_3 = findViewById(R.id.q6_3);
-        q6_4 = findViewById(R.id.q6_4);
+        mCheckboxQ6_answer1     = findViewById(R.id.mCheckboxQ6_answer1);
+        mCheckboxQ6_answer2     = findViewById(R.id.mCheckboxQ6_answer2);
+        mCheckboxQ6_answer3     = findViewById(R.id.mCheckboxQ6_answer3);
+        mCheckboxQ6_answer4     = findViewById(R.id.mCheckboxQ6_answer4);
     }
 
     public void checkQuestions(View v){
-        if (check1() && check2() && check3() && check4() && check5() && check6()) makeToast(getResources().getString(R.string.success));
+        int score = 0;
+        String message = " Incorrect Questions:";
+
+        if(check1())    score++;
+        else            message += " 1";
+
+        if(check2())    score++;
+        else            message += " 2";
+
+        if(check3())    score++;
+        else            message += " 3";
+
+        if(check4())    score++;
+        else            message += " 4";
+
+        if(check5())    score++;
+        else            message += " 5";
+
+        if(check6())    score++;
+        else            message += " 6";
+
+        if(score >= 6)  message = " " + getResources().getString(R.string.success);
+
+        makeToast("Score: " + String.valueOf(score) + " out of 6." + message );
     }
 
     private boolean check1(){
-        if( findViewById(q1.getCheckedRadioButtonId())==a1) return true;
-        makeToast("Question #1 was incorrect");
-        return false;
+        return findViewById(mRadioGroup1.getCheckedRadioButtonId()) == answer1;
     }
 
     private boolean check2(){
-        if( findViewById(q2.getCheckedRadioButtonId())==a2) return true;
-        makeToast("Question #2 was incorrect");
-        return false;
+        return findViewById(mRadioGroup2.getCheckedRadioButtonId()) == answer1;
     }
+
     private boolean check3(){
-        if(q3.getText().toString().toLowerCase().equals("strings.xml")) return true;
-        makeToast("Question #3 was incorrect");
-        return false;
+        return mEditText1.getText().toString().toLowerCase().equals("strings.xml");
     }
+
     private boolean check4(){
-        if(q4.getText().toString().toLowerCase().equals("private")) return true;
-        makeToast("Question #4 was incorrect");
-        return false;
+        return mEditText2.getText().toString().toLowerCase().equals("private");
     }
+
     private boolean check5(){
-        if(!q5_1.isChecked() && q5_2.isChecked() && q5_3.isChecked() && !q5_4.isChecked()) return true;
-        makeToast("Question #5 was incorrect");
-        return false;
+        return !mCheckboxQ5_answer1.isChecked() && mCheckboxQ5_answer2.isChecked() && mCheckboxQ5_answer3.isChecked() && !mCheckboxQ5_answer4.isChecked();
     }
+
     private boolean check6(){
-        if(q6_1.isChecked() && q6_2.isChecked() && q6_3.isChecked() && !q6_4.isChecked()) return true;
-        makeToast("Question #6 was incorrect");
-        return false;
+        return mCheckboxQ6_answer1.isChecked() && mCheckboxQ6_answer2.isChecked() && mCheckboxQ6_answer3.isChecked() && !mCheckboxQ6_answer4.isChecked();
     }
+
     private void makeToast(String message){
-        Toast.makeText(this,message, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,message, Toast.LENGTH_LONG).show();
     }
 }

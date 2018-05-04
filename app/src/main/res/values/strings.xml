@@ -1,39 +1,39 @@
 <resources>
     <string name="app_name">Meta Quiz</string>
 
-    <string name="q1_q">Question #1</string>
-    <string name="q1">What kind of view is THIS question in?</string>
-    <string name="a1_1">EditText</string>
-    <string name="a1_2">ImageView</string>
-    <string name="a1_3">TextView</string>
-    <string name="a1_4">LinearLayout</string>
+    <string name="questionNumber1">Question #1</string>
+    <string name="question1">What kind of view is THIS question in?</string>
+    <string name="question1_answer1">EditText</string>
+    <string name="question1_answer2">ImageView</string>
+    <string name="question1_answer3">TextView</string>
+    <string name="question1_answer4">LinearLayout</string>
 
-    <string name="q2_q">Question #2</string>
-    <string name="q2">What is the term for the transition \'stages\' an app goes through when a user opens, interacts with, and closes an app?</string>
-    <string name="a2_1">Transitions</string>
-    <string name="a2_2">Stage Movement</string>
-    <string name="a2_3">App Progression</string>
-    <string name="a2_4">The Activity Lifecycle</string>
+    <string name="questionNumber2">Question #2</string>
+    <string name="question2">What is the term for the transition \'stages\' an app goes through when a user opens, interacts with, and closes an app?</string>
+    <string name="question2_answer1">Transitions</string>
+    <string name="question2_answer2">Stage Movement</string>
+    <string name="question2_answer3">App Progression</string>
+    <string name="question2_answer14">The Activity Lifecycle</string>
 
-    <string name="q3_q">Question #3</string>
-    <string name="q3">Instead of hard-coding strings in the \'activity_main.xml\', what file should you typically put your strings?</string>
+    <string name="questionNumber3">Question #3</string>
+    <string name="question3">Instead of hard-coding strings in the \'activity_main.xml\', what file should you typically put your strings?</string>
 
-    <string name="q4_q">Question #4</string>
-    <string name="q4">In Java, if you don\'t want a method to be accessible outside of a class, what keyword should be used?</string>
+    <string name="questionNumber4">Question #4</string>
+    <string name="question4">In Java, if you don\'t want a method to be accessible outside of a class, what keyword should be used?</string>
 
-    <string name="q5_q">Question #5</string>
-    <string name="q5">What coding languages were used to make this quiz app?</string>
-    <string name="a5_1">Python</string>
-    <string name="a5_2">Java</string>
-    <string name="a5_3">XML</string>
-    <string name="a5_4">HTML</string>
+    <string name="questionNumber5">Question #5</string>
+    <string name="question5">What coding languages were used to make this quiz app?</string>
+    <string name="question5_answer1">Python</string>
+    <string name="question5_answer2">Java</string>
+    <string name="question5_answer3">XML</string>
+    <string name="question5_answer4">HTML</string>
 
-    <string name="q6_q">Question #6</string>
-    <string name="q6">In which ways can the \'Submit\' button below be accessed?</string>
-    <string name="a6_1">By referencing it through a unique @id</string>
-    <string name="a6_2">By passing it as a parameter in an \'onclick\' method</string>
-    <string name="a6_3">By referencing it as a child of the parent layout it is in</string>
-    <string name="a6_4">(There is no way to access it)</string>
+    <string name="questionNumber6">Question #6</string>
+    <string name="question6">In which ways can the \'Submit\' button below be accessed?</string>
+    <string name="question6_answer1">By referencing it through a unique @id</string>
+    <string name="question6_answer2">By passing it as a parameter in an \'onclick\' method</string>
+    <string name="question6_answer3">By referencing it as a child of the parent layout it is in</string>
+    <string name="question6_answer4">(There is no way to access it)</string>
 
     <string name="submit">Submit</string>
 
